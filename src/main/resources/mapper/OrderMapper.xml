@@ -5,9 +5,9 @@
 <mapper namespace="com.tian.second_project.dao.OrderDao">
 
 
-    <insert id="createOrder" parameterType="Order" useGeneratedKeys="true" keyProperty="id">
-        insert into stock_order(id,sid,name,create_time) value (id=#{id},name =#{name},sid=#{sid},create_time=#{create_time})
+    <!--创建订单-->
+    <insert id="createOrder" parameterType="Order" useGeneratedKeys="true" keyProperty="id" >
+        insert into stock_order values(#{id},#{sid},#{name},#{create_time})
     </insert>
-
 
 </mapper>

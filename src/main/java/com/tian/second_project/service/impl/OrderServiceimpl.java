@@ -44,7 +44,7 @@ public class OrderServiceimpl implements OrderSrvice {
     //创建订单
     private int createOrder(Stock stock){
         Order order = new Order();
-        order.setId(stock.getId());
+        //order.setId(stock.getId()+1);
         order.setSid(stock.getId());
         order.setName(stock.getName());
         order.setCreate_time(new Date());
